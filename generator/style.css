@@ -1,0 +1,118 @@
+.topbar{
+    background-color: #2DC0FF;
+}
+.title{
+    font-weight:bold;
+    text-shadow: 0px 4px 0px gray;
+    color:white;
+    margin-top:0px;
+    padding-top:10px;
+    font-size: 30px;
+    font-family: 'Vazirmatn', sans-serif; 
+    text-align:center;
+    width:360px;
+    animation: title 5s infinite;
+    transition: all 2s ease;
+}
+@keyframes title{
+    0% {text-shadow: 0px 4px 0px gray;transform:translateY(-4px);}
+    50% {text-shadow: 0px -4px 0px gray;transform:translateY(4px);}
+    100% {text-shadow: 0px 4px 0px gray;transform:translateY(-4px);}
+}
+.page{
+    font-family: 'Vazirmatn', sans-serif;
+    display:flex;
+    flex-direction:column;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+.unicode{
+    min-width:30px;
+    max-width:30px;
+    min-height:30px;
+    max-height:30px;
+    background-color: #50ECFF ;
+    text-align:center;
+    border-radius:2px;
+}
+.unicode:hover{
+    background-color:orange;
+}
+.button{
+    color:white;
+    min-width: 250px;
+    font-size: 22px;
+    border:3px double #00A4FF;
+    margin: 15px;
+    margin-right: 55px;
+    margin-left: 55px;
+    padding: 10px;
+    background-color: #00E7FF;
+    box-shadow: 0px 10px 0px #00C4FF;
+    text-shadow: 0px 0px 5px #00FFFF;
+    border-radius: 20px;
+    transition: all 1s ease;
+}  
+.button:hover{
+    box-shadow: 0px 0px 0px #00C4FF; 
+    transform: translateY(10px);
+    filter: hue-rotate(400deg);
+} 
+.copy{
+    min-width: 200px;
+    color:white;
+    font-size: 22px;
+    border:3px double #8D00FF;
+    margin: 15px;
+    margin-right: 55px;
+    margin-left: 55px;
+    padding: 10px;
+    background-color: #FF00D2;
+    box-shadow: 0px -2px 5px #E100FF;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.copy:hover{
+    animation: copy 1s 1;
+    transform:scale(1);
+    filter:hue-rotate(200deg) brightness(200%);
+}
+@keyframes copy{
+    0% {transform:scale(1)}
+    50% {transform:scale(1.2) perspective(400px) rotateY(180deg) rotateX(180deg); filter: hue-rotate(100deg)}
+    100% {transform:scale(1)}
+}
+.input{
+    text-align:center;
+    margin: 15px;
+    margin-right: 45px;
+    margin-left: 45px;
+    font-size: 20px; 
+    background-color: #71EDFF;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: white double 5px;
+    transition: all 2s ease;
+    text-shadow: 0px 1px white;
+}
+.input:focus{
+    border: aqua double 5px;
+    background-color: white;
+    color:gray;
+}
+.output{ 
+    font-size: 25px;  
+    text-align:center;
+    text-shadow: 0px 1px 2px #AAAAAA;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    /**/ 
