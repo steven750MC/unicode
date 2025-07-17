@@ -1,0 +1,138 @@
+html {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+  overflow-x:hidden;
+}
+body {
+  font-family : 'Vazirmatn'; 
+  display: flex;
+  flex-direction:column;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  padding:0;
+  margin:0;
+  overflow-x:hidden;
+  user-select:none;
+}
+.page {
+    position: relative;
+    background:white;
+    height: 100vh;
+    width: 100%;
+    text-align:center;
+    overflow-x:hidden;
+}
+.topbar{
+    position:fixed;
+    width:100%;
+    max-height: 70px;
+    background-color: #2DC0FF;
+    z-index: 10;
+    overflow-x:hidden;
+    box-shadow: 0px 2px 10px #2DC0FF;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    z-index:5;
+}
+.bg{
+    display:relative;
+    width:100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+    user-select:none;
+}
+.card{
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgba(255,255,255,0.5);
+    width:80%;
+    border-radius:20px;
+    box-shadow: 0px 2px 7px #D1F4FF;
+    transition: all 1s ease;
+    border: 2px solid white;
+    z-index:9;
+}
+.card:hover{
+    box-shadow: 0px 4px 20px #2DC0FF;
+    background-color:white;
+    transform: scale(1.05);
+    border: 2px solid #2DC0FF;
+    filter:hue-rotate(360deg);
+}
+.left-decor{
+    font-weight:normal;
+    position: absolute;
+    color:#E5FBFF;
+    left:-100px;
+    font-size:280px;
+    animation: decor 20s linear infinite;
+}
+.right-decor{
+    font-weight:normal;
+    overflow:hidden;
+    position: absolute;
+    color:#E5FCFF;
+    right:-100px;
+    font-size:300px;
+    animation:decor 20s linear infinite;
+}
+@keyframes decor{
+    100% {transform: rotateZ(360deg);}
+}
+.title{
+    font-weight:bold;
+    text-shadow: 0px 4px 0px gray;
+    color:white;
+    padding:10px;
+    font-size: 30px;
+    font-family: 'Vazirmatn', sans-serif; 
+    text-align:center;
+    width:100%;
+    text-align:center;
+    animation: title 5s infinite;
+    transition: all 2s ease;
+}
+@keyframes title{
+    0% {text-shadow: 0px 3px 0px gray;transform:translateY(-4px);}
+    50% {text-shadow: 0px -3px 0px gray;transform:translateY(4px);}
+    100% {text-shadow: 0px 3px 0px gray;transform:translateY(-4px);}
+}
+.intro{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    max-width:100%;
+    z-index:6;
+}
+.introtext{
+    margin-top: 100px;
+    color: #2DC0FF;
+}
+.card-img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px #D1F4FF;
+}
+.name{
+    font-weight:700;
+    margin-top:20px;
+    font-size: 20px;
+    color: black;
+}
+.bio{
+    font-size: 13px;
+    padding: 10px;
+    color: gray;
+}
